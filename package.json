@@ -16,14 +16,14 @@
     "yargs": "^15.4.1"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "jest": "^26.1.0",
-    "stripe": "^8.71.0"
+    "stripe": "^8.79.0"
   },
   "scripts": {
     "build": "docker build -t mock-stripe .",
     "docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
-    "lint": "eslint *.js data lib test",
+    "lint": "eslint *.js lib/*.js data/*.js test/*.js",
     "start": "forever ./index.js",
     "test": "jest"
   }
