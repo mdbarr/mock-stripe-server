@@ -1,12 +1,14 @@
-FROM node:carbon-alpine
+FROM node:erbium-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /mock-stripe
+
+RUN yarn global add forever
 
 COPY package.json yarn.lock ./
 
-RUN yarn install --production && yarn global add forever
+RUN yarn install --production
 
 COPY . .
 
-EXPOSE 5757
+EXPOSE 5757/tcp
 CMD [ "npm", "start" ]

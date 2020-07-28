@@ -22,7 +22,7 @@
     "stripe": "^8.79.0"
   },
   "scripts": {
-    "build": "docker build -t mock-stripe .",
+    "build": "docker build --pull -t mock-stripe .",
     "lint": "eslint *.js lib data test",
     "run:docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
     "start": "forever --minUptime=1000 --spinSleepTime=500 ./cli.js",
