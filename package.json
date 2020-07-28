@@ -13,6 +13,7 @@
     "async": "^3.2.0",
     "request": "^2.88.2",
     "restify": "^8.5.1",
+    "restify-cors-middleware": "^1.1.1",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
@@ -22,9 +23,9 @@
   },
   "scripts": {
     "build": "docker build -t mock-stripe .",
-    "docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
     "lint": "eslint *.js lib data test",
-    "start": "forever ./cli.js",
+    "run:docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
+    "start": "forever --minUptime=1000 --spinSleepTime=500 ./cli.js",
     "test": "jest"
   }
 }
