@@ -10,15 +10,15 @@
     "mock-stripe-server": "./index.js"
   },
   "dependencies": {
-    "async": "^2.6.0",
-    "minimist": "^1.2.0",
-    "request": "^2.81.0",
-    "restify": "^5.0.1"
+    "async": "^3.2.0",
+    "minimist": "^1.2.5",
+    "request": "^2.88.2",
+    "restify": "^8.5.1"
   },
   "devDependencies": {
-    "eslint": "^4.2.0",
-    "mocha": "^3.4.2",
-    "stripe": "^4.23.1"
+    "eslint": "^7.4.0",
+    "mocha": "^8.0.1",
+    "stripe": "^8.71.0"
   },
   "scripts": {
     "build": "docker build -t mock-stripe .",
