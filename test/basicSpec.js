@@ -1,11 +1,7 @@
 'use strict';
 
-describe('Basic Spec', function() {
-  describe('Token Test', function() {
-    it('Create a token', function() {
-      return stripe.tokens.create({
-        card: stripe.util.getDefaultCreditCard()
-      });
-    });
+describe('Basic Spec', () => {
+  describe('Token Test', () => {
+    it('Create a token', () => stripe.tokens.create({ card: stripe.util.getDefaultCreditCard() }));
   });
 });

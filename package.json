@@ -23,9 +23,8 @@
   "scripts": {
     "build": "docker build -t mock-stripe .",
     "docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
-    "fix": "./node_modules/.bin/eslint --fix **/*.js || exit 0",
-    "lint": "./node_modules/.bin/eslint **/*.js || exit 0",
+    "lint": "eslint data lib test",
     "start": "forever ./index.js",
-    "test": "./node_modules/.bin/mocha ./test/testCore.js ./test/*Spec.js || exit 0"
+    "test": "mocha ./test/testCore.js ./test/*Spec.js"
   }
 }

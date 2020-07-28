@@ -14,11 +14,11 @@ if (process.env.STRIPE_SECRET_KEY) {
   stripe._api.host = 'localhost';
   stripe._api.port = '5757';
 
-  before(function(done) {
+  before((done) => {
     stripeServer.boot(done);
   });
 
-  after(function() {
+  after(() => {
     stripeServer.quit();
   });
 }
