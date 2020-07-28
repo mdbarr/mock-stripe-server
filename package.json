@@ -7,13 +7,13 @@
   "author": "Mark Barr <mark@hyperingenuity.com>",
   "license": "MIT",
   "bin": {
-    "mock-stripe-server": "./index.js"
+    "mock-stripe-server": "./cli.js"
   },
   "dependencies": {
     "async": "^3.2.0",
-    "minimist": "^1.2.5",
     "request": "^2.88.2",
-    "restify": "^8.5.1"
+    "restify": "^8.5.1",
+    "yargs": "^15.4.1"
   },
   "devDependencies": {
     "eslint": "^7.4.0",

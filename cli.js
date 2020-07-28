@@ -3,8 +3,7 @@
 
 const fs = require('fs');
 
-const args = process.argv.slice(2);
-const options = require('minimist')(args);
+const options = require('yargs').argv;
 let config;
 
 options.config = options.config || options.c || './config.json';
