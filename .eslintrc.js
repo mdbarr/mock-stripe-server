@@ -12,6 +12,9 @@ module.exports = {
     es6: true,
     jest: true,
   },
+  globals: {
+    "stripe": true,
+  },
   rules: {
     'accessor-pairs': 'error',
     'array-bracket-newline': [ 'error', { multiline: true } ],
@@ -27,6 +30,7 @@ module.exports = {
     'comma-style': [ 'error', 'last' ],
     'consistent-return': 'error',
     'constructor-super': 'error',
+    'curly': 'error',
     'dot-location': [ 'error', 'object' ],
     'dot-notation': 'error',
     'eol-last': 'error',
