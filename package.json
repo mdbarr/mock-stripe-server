@@ -23,8 +23,8 @@
   "scripts": {
     "build": "docker build -t mock-stripe .",
     "docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
-    "lint": "eslint *.js lib/*.js data/*.js test/*.js",
-    "start": "forever ./index.js",
+    "lint": "eslint *.js lib data test",
+    "start": "forever ./cli.js",
     "test": "jest"
   }
 }
