@@ -17,14 +17,14 @@
   },
   "devDependencies": {
     "eslint": "^7.4.0",
-    "mocha": "^8.0.1",
+    "jest": "^26.1.0",
     "stripe": "^8.71.0"
   },
   "scripts": {
     "build": "docker build -t mock-stripe .",
     "docker": "docker run -d --rm --name mock-stripe -p 5757:5757 mock-stripe",
-    "lint": "eslint data lib test",
+    "lint": "eslint *.js data lib test",
     "start": "forever ./index.js",
-    "test": "mocha ./test/testCore.js ./test/*Spec.js"
+    "test": "jest"
   }
 }

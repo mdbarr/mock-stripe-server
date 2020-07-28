@@ -13,7 +13,7 @@ module.exports = {
     jest: true,
   },
   globals: {
-    "stripe": true,
+    stripe: true,
   },
   rules: {
     'accessor-pairs': 'error',
