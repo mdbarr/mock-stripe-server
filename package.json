@@ -11,7 +11,7 @@
     "mock-stripe-server": "./cli.js"
   },
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "request": "^2.88.2",
     "restify": "^8.5.1",
     "restify-cors-middleware": "^1.1.1",
